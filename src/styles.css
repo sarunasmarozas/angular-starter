@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+.parent {
+  background-color: rgb(201, 201, 201);
+  margin: 0.5rem;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  width: 98.75vw;
+  height: 98.75vh;
+
+  border: 2px solid rgb(71, 70, 70);
+  box-sizing: content-box;
+  font-family: monospace;
+}
+
+.sibling {
+  padding: 1rem;
+  width: 75vw;
+  height: 32vh;
+
+  color: white;
+}
+
+.component-a {
+  border: 2px solid rgb(235, 235, 105);
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: rgba(235, 235, 105, 0.2);
+}
+
+.component-b {
+  border: 2px solid rgb(19, 136, 19);
+  border-radius: 0;
+  background-color: rgba(110, 206, 110, 0.2);
+}
+
+.component-c {
+  border: 2px solid rgb(185, 17, 17);
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: rgba(230, 103, 103, 0.2);
+}
+
+.header {
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  text-transform: uppercase;
+}
+
+.card-body {
+  color: black;
+}
+
+.card {
+  background-color: transparent;
+  color: black;
+  border: none;
+}

@@ -1,0 +1,18 @@
+<div class="sibling component-a">
+  <div class="header">
+    <p>{{ title }}</p>
+    <button class="btn btn-primary button" (click)="getTodoFromApi()">fetch todo</button>
+  </div>
+  <hr>
+  <ng-container *ngIf="todo; else noTodo">
+    <div class="card-body">
+      <h5 class="card-title">Title: {{ todo.title }}</h5>
+      <p class="card-text">Completed: {{ todo.completed }}</p>
+      <p class="card-text">Todo ID: {{ todo.id }}</p>
+      <p class="card-text">User ID: {{ todo.userId }}</p>
+    </div>
+  </ng-container>
+  <ng-template #noTodo>
+    <p class="card">No todos fetched yet...</p>
+  </ng-template>
+</div>
