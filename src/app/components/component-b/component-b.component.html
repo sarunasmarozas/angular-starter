@@ -1,7 +1,19 @@
 <div class="sibling component-b">
   <div class="header">
     <p>{{ title }}</p>
-    <button class="btn btn-primary button">open modal</button>
+    <button class="btn btn-primary button" (click)="openModal()">open modal</button>
   </div>
   <hr>
 </div>
+
+<ng-template #modal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h1>We have a new modal</h1>
+  </div>
+</ng-template>
